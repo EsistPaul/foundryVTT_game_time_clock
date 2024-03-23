@@ -43,6 +43,15 @@ Hooks.once("init", () => {
         type: Boolean
     });
 
+    game.settings.register("game_time_clock", "reset", {
+        name: game.i18n.localize("GMTimeClock.reset.name"),
+        hint: game.i18n.localize("GMTimeClock.reset.hint"),
+        scope: "world",
+        config: true,
+        default: false,
+        type: Boolean
+    });
+
 
 
 });
@@ -52,6 +61,11 @@ Hooks.on("renderSettings", (dialog, html) => {
 Hooks.once("ready", () => {
     GMTimeplayTime = game.settings.get("game_time_clock", "GMTime");
     GMwithPlayerTimeplayTime = game.settings.get("game_time_clock", "GMwithPlayerTime");
+    if(game.settings.get("game_time_clock", "reset")) {
+        GMTimeplayTime = 0;
+	GMwithPlayerTimeplayTime = 0;
+        game.settings.set("game_time_clock", "reset", false);
+    }
     startTime = Date.now();
 
     setInterval(

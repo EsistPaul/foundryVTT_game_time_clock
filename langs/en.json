@@ -4,5 +4,7 @@
     "GMTimeClock.moduleSettingsPaused.name": "will the clock paused when game paused",
     "GMTimeClock.moduleSettingsPaused.hint": "if it is checked the clock would stop count when the game is paused.",
     "GMTimeClock.forceFalseDebugMode.name": "Forced Ture off Debug Mode",
-    "GMTimeClock.forceFalseDebugMode.hint": "Debug Mode will pinging some debug info every second."
+    "GMTimeClock.forceFalseDebugMode.hint": "Debug Mode will pinging some debug info every second.",
+    "GMTimeClock.reset.name": "Reset",
+    "GMTimeClock.reset.hint": "Resets the clock"
 }
