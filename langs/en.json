@@ -6,5 +6,5 @@
     "GMTimeClock.forceFalseDebugMode.name": "Forced Ture off Debug Mode",
     "GMTimeClock.forceFalseDebugMode.hint": "Debug Mode will pinging some debug info every second.",
     "GMTimeClock.reset.name": "Reset",
-    "GMTimeClock.reset.hint": "Resets the clock"
+    "GMTimeClock.reset.hint": "Resets the clock. Only works when foundry is started the next time"
 }
